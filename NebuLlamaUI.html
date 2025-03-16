@@ -737,7 +737,7 @@
                     
                     <div class="flex items-start">
                         <textarea x-model="userInput" 
-                                 @keydown.enter.prevent="!$event.shiftKey && sendMessage()"
+                                 @keydown.enter="!$event.shiftKey && sendMessage()"
                                  placeholder="Type your message here..." 
                                  rows="3"
                                  class="settings-input rounded-md p-2 w-full resize-none"></textarea>
